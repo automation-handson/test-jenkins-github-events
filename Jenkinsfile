@@ -10,7 +10,7 @@ pipeline {
                 echo "this will be triggered!."
             }
         }
-        stage() {
+        stage('another test stage') {
             steps {
                 echo "another stage"
             }
