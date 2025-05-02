@@ -10,5 +10,10 @@ pipeline {
                 echo "this will be triggered!."
             }
         }
+        stage('another test stage') {
+            steps {
+                echo "another stage ${env.BRANCH_NAME}"
+            }
+        }
     }
 }
